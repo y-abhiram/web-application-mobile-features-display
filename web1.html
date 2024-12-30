@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>WEBSITE DESIGN USING HTML AND CSS</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="main">
+ <nav>
+    <div class="logo">
+        <img src="/home/abhiram1289/Desktop/photo web/logo.jpg" height="50" width="30">
+    </div>
+    <div class="nav-links">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">phone</a></li>
+            <li><a href="#">Accesories</a></li>
+            <li><a href="#">cart</a></li>
+         </ul>
+    </div>
+
+ </nav>
+  <div class="information">
+  
+  <div class="overlay" ></div>
+  <img src="/home/abhiram1289/Desktop/photo web/mobile.jpeg"
+  class="mobile">
+        <div id="circle1">
+            <div class="feature one">
+            <img src="/home/abhiram1289/Desktop/photo web/apple-camera.png">
+           <div> 
+           <h1>camara</h1>
+            <p> 12mp,wide angle lens</p>
+            </div>
+           </div>
+            <div class="feature two">
+             <img src="/home/abhiram1289/Desktop/photo web/processor-512.png">
+               <div> 
+           <h1>processor</h1>
+            <p> snapdragon octa core ibm adx</p>
+            </div>
+           </div>
+             
+            <div class="feature three">
+             <img src="/home/abhiram1289/Desktop/photo web/mobile-phone-8-xxl.png">
+               <div> 
+           <h1>display</h1>
+            <p> 6.5"mini-Drop Fullscreen</p>
+            </div>
+           </div>
+        
+            <div class="feature four">
+             <img src="/home/abhiram1289/Desktop/photo web/battery-10-512.png">
+              <div> 
+           <h1>Battery Life</h1>
+            <p> 6000mAh,760hrs Standby</p>
+            </div>
+           </div>
+              </div>
+        </div>
+
+<div class="controls">
+ <img src="/home/abhiram1289/Desktop/photo web/uparrow.png" id="upBtn">
+ <h3>feature</h3>
+<img src="/home/abhiram1289/Desktop/photo web/downarrow.jpeg"  id="downBtn">
+</div>
+    </div>
+
+</div>    
+
+<script>
+
+var circle1=document.getElementById("circle1");
+var upBtn=document.getElementById("upBtn");
+var downBtn=document.getElementById("downBtn");
+
+var rotatevalue=circle1.style.transform;
+var rotatesum;
+
+upBtn.onclick=function()
+{
+rotatesum = rotatevalue + "rotate(-90deg)";
+circle1.style.transform=rotatesum;
+rotatevalue=rotatesum;
+}
+
+downBtn.onclick=function()
+{
+rotatesum = rotatevalue + "rotate(90deg)";
+circle1.style.transform=rotatesum;
+rotatevalue=rotatesum;
+}
+</script>
+
+
+
+
+</body>
+</html>
